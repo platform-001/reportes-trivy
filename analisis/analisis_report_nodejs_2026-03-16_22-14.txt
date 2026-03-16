@@ -1,0 +1,26 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: node-app:18.12.0
+Fecha: 16/03/2026 22:14
+====================
+
+Resumen:
+
+En español, estas vulnerabilidades son las siguientes:
+
+1. CVE-2023-32002 | nodejs | CRITICAL | Node.js policy bypass via module constructor attack
+    - Descripción: Un atacante podría aprovechar esta vulnerabilidad para acceder a privilegios elevados en el sistema, como los de un administrador del sistema, si se usa una aplicación de Node.js que se ejecuta con privilegios elevados o se ejecute en contextos elevados.
+    - Tipo: Vulnerabilidad de seguridad de software
+    - Gravedad: CRITICAL
+
+2. CVE-2023-30581 | nodejs | HIGH | Node.js mainModule proto bypass leads to policy bypass
+    - Descripción: Un atacante podría aprovechar esta vulnerabilidad para acceder a privilegios elevados en el sistema, como los de un administrador del sistema, si se usa una aplicación de Node.js que se ejecuta con privilegios elevados o se ejecute en contextos elevados.
+    - Tipo: Vulnerabilidad de seguridad de software
+    - Gravedad: HIGH
+
+3. CVE-2023-23918 | npm | HIGH | npm privilege escaletion via generated scripts
+    - Descripción: Un atacante podría aprovechar esta vulnerabilidad para acceder a privilegios elevados en el sistema, como los de un administrador del sistema, si se usa una aplicación de Node.js que se ejecuta con privilegios elevados o se ejecute en contextos elevados.
+    - Tipo: Vulnerabilidad de seguridad de software
+    - Gravedad: HIGH
+
+4. CVE-2023-23920 | nodejs | LOW | Node.js insecure loading of ICU data
