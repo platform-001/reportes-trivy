@@ -1,0 +1,14 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: python-app:3.9
+Fecha: 17/03/2026 21:52
+====================
+
+Sure, here's a summary of the most critical and important vulnerabilities related to Spanish in CVe-2023-1255, CVe-2023-2650, CVe-2022-4450, and CVe-2023-0466:
+
+CVE-2023-1255 | libssl3 | CRITICAL | OpenSSL buffer overread in AES-XTS cipher - This vulnerability allows an attacker to execute code or read sensitive data when the buffer is overread during encryption. It affects OpenSSL version 1.1.1, 1.1.0, 3.0.2 and 2.1.1.
+CVE-2023-2650 | openssl | HIGH | Possible DoS translating ASN.1 object identifier - This vulnerability affects the translation of ASN.1 (Abstract Syntax Notation One) object identifiers during object parsing in OpenSSL 3.0.2 and earlier versions.
+CVE-2022-4450 | libcrypto3 | HIGH | Double free after calling PEM_read_bio_ex - This vulnerability allows an attacker to cause a double free when reading a PEM (PKCS12) file using OpenSSL 3.0.2 and earlier versions.
+CVE-2023-0466 | libssl3 | MEDIUM | Certificate policy check not enabled - This vulnerability allows an attacker to bypass certificate validation checks in OpenSSL 1.1.1, 1.1.0, 3.0.2 and 2.1.1 versions.
+CVe-2023-0466 | libssl3 | MEDIUM | Certificate policy check not enabled - This vulnerability affects OpenSSL version 3.1.1 and earlier versions. It allows attackers to bypass certificate validation checks when calling PEM_read_bio_X509().
+CVe-2023-4450 | libcrypto3 | HIGH | Double free after calling PEM_read_bio_ex - This vulnerability affects OpenSSL 1.1.1, 1.1.0, 3.0.2 and 2.1.1 versions. It allows an attacker to cause a double free when reading a PEM (PKCS12) file using OpenSSL 3.0.2 and earlier versions.
