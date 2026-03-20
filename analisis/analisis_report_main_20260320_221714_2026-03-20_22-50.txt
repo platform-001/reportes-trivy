@@ -1,0 +1,16 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 20/03/2026 22:50
+====================
+
+Sure, here's an updated summary of the most critical and urgent vulnerabilities affecting Spanish language:
+
+1. CVE-2023-6378 | ch.qos.logback:logback-classic | HIGH | logback: serialization vulnerability in logback receiver
+Explanation: This is a high-severity vulnerability, affecting the logback receiver module of QOS. The attacker can inject code into the logback log messages. This leads to a potential DoS condition if a malicious message is sent from a remote IP address. 2. CVE-2023-6378 | ch.qos.logback:logback-core | HIGH | logback: serialization vulnerability in logback receiver
+Explanation: This is a high-severity vulnerability, affecting the logback receiver module of QOS. The attacker can inject code into the logback log messages. This leads to a potential DoS condition if a malicious message is sent from a remote IP address. 3. GHSA-72hv-8253-57qq | com.fasterxml.jackson.core:jackson-core | HIGH | jackson-core: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition
+Explanation: This is a high-severity vulnerability, affecting the `JacksonCore` module of FastJet. The attacker can bypass the Number Length Constraint and execute arbitrary code with elevated privileges. 4. CVE-2025-24970 | io.netty:nettysink | HIGH | Nettysink: Nettysink API is vulnerable to unauthenticated remote code execution
+Explanation: This vulnerability affects the `Nettysink` module of Io. The attacker can execute arbitrary commands with elevated privileges if they have access to a secure session or use the session for unauthorized purposes. 5. CVE-2025-41243 | org.springframework:spring-core | HIGH | Spring Framework Annotaion Detector Vulnerability
+Explanation: This is a high-severity vulnerability, affecting the `SpringCore` module of Spring. The attacker can modify the annotation data of the target class or method and cause a potential DoS condition. 6. CVE-2024-38819 | org.springframework:spring-webflux | HIGH | Spring WebMVC: Path traversal vulnerability in Functional Web Frameworks
+Explanation: This is a high-severity vulnerability, affecting the `SpringWebMvc` module of Spring. The attacker can access sensitive data through function calls in the `HttpRequestBuilder`. 7. CVE-2024-38816 | org.springframework:spring-webmvc | HIGH | Spring Web MVC: Path traversal vulnerability in Functional Web Frameworks
+Explanation: This is a high-severity vulnerability, affecting the `SpringWebMvc` module of Spring. The attacker can access sensitive data through function calls in the `HttpRequestBuilder`.
