@@ -1,0 +1,21 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 23/03/2026 16:56
+====================
+
+1. Ch.Qos.Logback: Serialization vulnerability in logback receiver (CVE-2023-6378)
+    Severity: HIGH
+    Titulo: Serialization vulnerability in logback receiver (CVE-2023-6378)
+2. FasterXml.JacksonCore: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition (CVE-2025-55163)
+    Severity: HIGH
+    Titulo: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition (CVE-2025-55163)
+3. Netty.CodecHttp2: Netty MadeYouReset HTTP/2 DDoS Vulnerability (CVE-2025-24970)
+    Severity: HIGH
+    Titulo: Netty MadeYouReset HTTP/2 DDoS Vulnerability (CVE-2025-24970)
+4. Netty.Handler: SslHandler doesn't correctly validate packets which can lead to native crash when using native SSLEngine (CVE-2025-22235)
+    Severity: HIGH
+    Titulo: SslHandler doesn't correctly validate packets which can lead to native crash when using native SSLEngine (CVE-2025-22235)
+5. SpringBoot: Spring Boot EndpointRequest.to() creates wrong matcher if actuator endpoint is not exposed (CVE-2025-41249)
+    Severity: HIGH
+    Titulo: Spring Boot EndpointRequest.to() creates wrong matcher if actuator endpoint is not exposed (CVE-2025-41249)
