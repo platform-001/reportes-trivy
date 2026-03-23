@@ -1,0 +1,14 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 23/03/2026 16:12
+====================
+
+- CVSE-2025-6378 | ch.qos.logback:logback-classic | HIGH | logback: serialization vulnerability in logback receiver
+- GHSA-72hv-8253-57qq | com.fasterxml.jackson.core:jackson-core | HIGH | jackson-core: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition
+- CVSE-2025-55163 | io.netty:netty-codec-http2 | HIGH | netty: netty-codec-http2: Netty MadeYouReset HTTP/2 DDoS Vulnerability
+- CVSE-2025-24970 | io.netty:netty-handler | HIGH | io.netty:netty-handler: SslHandler doesn't correctly validate packets which can lead to native crash when using native SSLEngine
+- CVSE-2025-22235 | org.springframework.boot:spring-boot | HIGH | org.springframework.boot/spring-boot: Spring Boot EndpointRequest.to() creates wrong matcher if actuator endpoint is not exposed
+- CVSE-2025-41249 | org.springframework:spring-core | HIGH | springframework: URL Parsing with Host Validation
+- CVSE-2024-22243 | org.springframework:spring-web | HIGH | springframework: URL Parsing with Host Validation
+- CVSE-2024-22259 | org.springframework:spring-webflux | HIGH | spring-webmvc: Path Traversal Vulnerability in Spring Application
