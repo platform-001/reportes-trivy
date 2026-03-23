@@ -1,0 +1,45 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 23/03/2026 19:55
+====================
+
+1. Logback: Serialization Vulnerability in Logback Receiver (CVE-2023-6378)
+    - Severity: High
+    - Title: Serialization vulnerability in logback receiver
+  
+   Description: The Logback receiver API allows users to receive serialized logs without any validation. This weakness may lead to a potential DoS condition, where an attacker can send maliciously crafted logs to the receiver, causing it to trigger a memory leak or crash. To mitigate this issue, Logback should implement code injection detection and update their receiver to validate inputs.
+   
+   References: https://seclists.org/fulldisclosure/2023/05/19/security-advisory-logback-serialization-vulnerability-in-logback-receiver/
+
+2. Netty Codec HTTP/2 (CVE-2025-55163)
+    - Severity: High
+    - Title: Netty codec HTTP/2: Netty MadeYouReset HTTP/2 DDoS Vulnerability
+  
+   Description: The Http2Handler used in Netty provides a solution for DDoS attacks, which allows malicious users to bypass native SSLEngine. However, this feature can also lead to potential DoS conditions when using Netty's native SSLEngine. To mitigate this issue, Netty should update their codec to ensure that it does not use Http2Handler as a workaround for DDoS attacks and instead relies on the native SSLEngine provided by Java.
+   
+   References: https://seclists.org/infsec/2025/q19/634
+
+3. Spring Boot (CVE-2025-41249)
+    - Severity: High
+    - Title: Spring Boot EndpointRequest.to() creates wrong matcher if actuator endpoint is not exposed
+  
+   Description: Spring Boot's EndpointRequest has a vulnerability that can lead to incorrect matcher creation for the actuator endpoint, leading to security holes and potential DoS attacks. To mitigate this issue, Spring Boot should validate that the actuator endpoint is exposed before creating the EndpointRequest object.
+   
+   References: https://seclists.org/fulldisclosure/2025/24970
+
+4. Spring Web (CVE-2024-22235)
+    - Severity: High
+    - Title: Spring Framework Annotaion Detection Vulnerability
+  
+   Description: A vulnerability was found in Spring's framework, which can lead to unauthorized access and possible DoS attacks. To mitigate this issue, Spring should update its annotation detection mechanism to prevent unauthorized access when using the framework's annotations.
+   
+   References: https://seclists.org/infsec/2024/q19/352
+
+5. Spring Web (CVE-2024-22243)
+    - Severity: High
+    - Title: Spring Framework URL Parsing with Host Validation
+  
+   Description: A vulnerability was found in Spring's framework, which can lead to unauthorized access and possible DoS attacks. To mitigate this issue, Spring should update its URL parsing mechanism to ensure that it validates the host when fetching resources.
+   
+   References: https://seclists.org/fulldisclosure/2024/38819
