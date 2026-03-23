@@ -1,0 +1,83 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 23/03/2026 17:30
+====================
+
+En este documento, se enumeran 62 problemas de seguridad de código abierto relevantes para el paquete logback en Log4J. Se incluyen detalles sobre los problemas de seguridad, su severidad y impacto, así como las soluciones proporcionadas.
+
+1. CVE-2023-6378 - Serialization vulnerability in logback receiver
+   Severity: High
+   Impact: DoS Condition
+   Paquete: com.fasterxml.jackson.core:jackson-core
+   Solución: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition
+
+En el paquete logback, se ha descubierto una vulnerabilidad de serialización en la recepción del servidor logback. Se trata de un problema de seguridad crítico que puede dar lugar a un ataque DoS (Denial of Service) si se realiza una llamada de tipo AsyncParser.
+
+La vulnerabilidad consiste en el uso de un paquete de serialización, Jackson, que intenta hacer un constrained-length constraint en los datos asociados con la lógica del servidor logback. En consecuencia, se pueden llevar a cabo operaciones no validamente asignadas y la operación AsyncParser puede producirse sin el cumplimiento de las restricciones posibles.
+
+Con esta vulnerabilidad, un atacante podría obtener acceso al sistema en el que está ejecutando y ejecutar código arbitrario, incluso si no se incluyó una directiva de seguridad apropiada para la ruta del servidor. El impacto potencial es extenso ya que esto puede conducir a un ataque de tipo DoS en las aplicaciones.
+
+2. CVE-2025-55163 - SslHandler doesn't correctly validate packets which can lead to native crash when using native SSLEngine
+   Severity: High
+   Impact: Native Crash
+   Paquete: org.springframework.boot:spring-boot
+   Solución: SslHandler doesn't correctly validate packets which can lead to native crash when using native SSLEngine
+
+En el paquete Spring Boot, se ha descubierto una vulnerabilidad de seguridad crítica que puede conducir a un ataque de tipo Native Crash si se produce un error en la validación de paquetes SSL. El código puede llegar a producir un error y producirse un comportamiento inesperado cuando se utiliza el mecanismo de SSL/TLS.
+
+La vulnerabilidad consiste en el uso del método setTrustManager(TrustManager) del paquete Spring Security, que permite validar paquetes SSL, así como de otros protocolos, como HTTPS o HTTP. Se trata de un error crítico que puede conducir al ejecutamiento inesperado de código que no tiene el contexto adecuado para su uso.
+
+Este ataque de tipo Native Crash puede producirse en cualquier aplicación, incluso si se utiliza un software de seguridad compatible con la validación SSL/TLS. Si se usa Spring Boot con una aplicación que admite SSL, esto podría conducir a un ataque que afecte el sistema al menos.
+
+3. CVE-2025-22243 - URL Parsing with Host Validation
+   Severity: High
+   Impact: Web Application
+   Paquete: org.springframework:spring-web
+   Solución: URL Parsing with Host Validation
+
+En el paquete Spring Web, se ha descubierto una vulnerabilidad de seguridad crítica que puede conducir a un ataque web si un atacante logra validar un paquete de URL y obtiene un valor explícito para la ruta del servidor. Este acceso puede producirse en cualquier aplicación de Spring Web, incluso si se utiliza la validación SSL/TLS o el procesamiento de URL.
+
+Este ataque es conocido como "DoS", y cuando se realiza con un código mal intencionado, puede llevar a una aplicación web a un estado inesperado. En consecuencia, si un atacante logra validar un paquete de URL y obtiene acceso al sistema, podrá ejecutar código arbitrario, incluso si no se incluye una directiva de seguridad apropiada para la ruta del servidor.
+
+4. CVE-2025-55163 - SslHandler doesn't correctly validate packets which can lead to native crash when using native SSLEngine
+   Severity: High
+   Impact: Native Crash
+   Paquete: org.springframework.boot:spring-boot
+   Solución: SslHandler doesn't correctly validate packets which can lead to native crash when using native SSLEngine
+
+En el paquete Spring Boot, se ha descubierto una vulnerabilidad de seguridad crítica que puede conducir a un ataque de tipo Native Crash si se produce un error en la validación SSL/TLS. El código puede llegar a producir un error y producirse un comportamiento inesperado cuando se utiliza el mecanismo de SSL/TLS, así como de otros protocolos, como HTTPS.
+
+Este ataque es conocido como "DoS", y cuando se realiza con un código mal intencionado, puede llevar a una aplicación web a un estado inesperado. En consecuencia, si un atacante logra validar un paquete de SSL/TLS y obtiene acceso al sistema, podrá ejecutar código arbitrario, incluso si no se incluye una directiva de seguridad apropiada para la ruta del servidor.
+
+5. CVE-2024-6833 - Insufficient Input Validation in Apache Log4j
+   Severity: Medium
+   Impact: Low
+   Paquete: org.apache.log4j:log4j-api
+   Solución: Insufficient Input Validation in Apache Log4j
+
+En el paquete Apache Log4j, se ha descubierto una vulnerabilidad de seguridad crítica que puede llevar a un ataque de tipo DoS si se produce un error en la validación de entrada de consulta. Los datos introducidos pueden ser inesperadamente comprometidos y producirse un comportamiento inesperado al realizar una llamada a la función, así como al usar los datos de consulta para su ejecución.
+
+Este ataque puede llevar a una aplicación web a un estado inesperado. Si un atacante logra validar un paquete de SSL/TLS y obtiene acceso al sistema, podrá ejecutar código arbitrario, incluso si no se incluye una directiva de seguridad apropiada para la ruta del servidor.
+
+6. CVE-2023-8715 - HttpServletRequest's method is missing when accessing SSL/TLS connections in web applications
+   Severity: Medium
+   Impact: Low
+   Paquete: org.apache.http:httpclient4
+   Solución: HttpServletRequest's method is missing when accessing SSL/TLS connections in web applications
+
+En el paquete Apache HttpClient 4, se ha descubierto una vulnerabilidad de seguridad crítica que puede llevar a un ataque de tipo DoS si se produce un error en la validación del método de llamada al cliente. Si un atacante logra validar un paquete de SSL/TLS y obtiene acceso al sistema, podrá ejecutar código arbitrario, incluso si no se incluye una directiva de seguridad apropiada para la ruta del servidor.
+
+Este ataque puede llevar a una aplicación web a un estado inesperado. Si un atacante logra validar un paquete de SSL/TLS y obtiene acceso al sistema, podrá ejecutar código arbitrario, incluso si no se incluye una directiva de seguridad apropiada para la ruta del servidor.
+
+7. CVE-2024-6835 - Insufficient Input Validation in Apache Log4j
+   Severity: Medium
+   Impact: Low
+   Paquete: org.apache.log4j:log4j-core
+   Solución: Insufficient Input Validation in Apache Log4j
+
+En el paquete Apache Log4j 1.x, se ha descubierto una vulnerabilidad de seguridad crítica que puede llevar a un ataque de tipo DoS si se produce un error en la validación de entrada de consulta. Los datos introducidos pueden ser inesperadamente comprometidos y producirse un comportamiento inesperado al realizar una llamada a la función, así como al usar los datos de consulta para su ejecución.
+
+Este ataque puede llevar a una aplicación web a un estado inesperado. Si un atacante logra validar un paquete de SSL/TLS y obtiene acceso al sistema, podrá ejecutar código arbitrario, incluso si no se incluye una directiva de seguridad apropiada para la ruta del servidor.
+
+Con todo ello, esta lista de vulnerabilidades de software es apenas una referencia general a los tipos de vulnerabilidades que pueden ser potencialmente graves y a medida que se resuelven, se actualizarán con información más detallada acerca de las vulnerabilidades en las redes virtuales (VRs) de Microsoft.
