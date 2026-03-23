@@ -1,0 +1,22 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 23/03/2026 19:42
+====================
+
+1. Logback: Serialization vulnerability in logback receiver (CVE-2023-6378)
+The logback: serialization vulnerability in logback receiver is a critical vulnerability that can lead to potential DoS conditions if exploited by an attacker. The vulnerability affects the logback: serialization API, which is used for handling serialized data in the logging context. If the vulnerable APIs are not properly implemented or if they are accidentally exposed, the attacker can use them to gain access and execute code on a server or system.
+2. Fast-Xml: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition (CVE-2025-55163)
+The Fast-Xml: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition is a critical vulnerability that can lead to an attacker gaining access and executing code on a system. The vulnerability affects the Fast-Xml:AsyncParse API, which is used for handling asynchronous parsing of XML documents. If the vulnerable API is not properly implemented or if it is accidentally exposed, the attacker can use it to gain access and execute code on a server or system.
+3. HttpServletRequest.to() (CVE-2025-22235)
+The HttpServletRequest.to() method in Spring Boot causes incorrect matchers to be created when actuator endpoints are not exposed, leading to an attacker gaining access and executing code on a server or system. The vulnerability is caused by the vulnerable API's handling of JSON parsing. If the vulnerable API is not properly implemented or if it is accidentally exposed, the attacker can use it to gain access and execute code on a server or system.
+4. Spring Web: Spring Framework Annotaion Detection Vulnerability (CVE-2025-41249)
+The Spring Web: Spring Framework Annotaion Detector Vulnerability is a critical vulnerability that can lead to an attacker gaining access and executing code on a system. The vulnerability affects the Spring Framework Annotaion Detector, which is used for detecting and handling annotation-based security threats. If the vulnerable API is not properly implemented or if it is accidentally exposed, the attacker can use it to gain access and execute code on a server or system.
+5. Spring Web: URL Parsing with Host Validation (CVE-2024-22259)
+The Spring Web: URL Parsing with Host Validation Vulnerability is a critical vulnerability that can lead to an attacker gaining access and executing code on a system. The vulnerability affects the Spring Web: URL Parser, which is used for validating URLs against certain restrictions. If the vulnerable API is not properly implemented or if it is accidentally exposed, the attacker can use it to gain access and execute code on a server or system.
+6. Spring WebFlux: Path Traversal Vulnerability in Spring Application Using RouteRFunctions and FileSystemResource (CVE-2024-38819)
+The Spring WebFlux: Path Traversal Vulnerability in Spring Application with RouteRFunctions and FileSystemResource is a critical vulnerability that can lead to an attacker gaining access and executing code on a system. The vulnerability affects the Spring Web Flux: Path Traverse, which is used for handling paths in routing and resource handling. If the vulnerable API is not properly implemented or if it is accidentally exposed, the attacker can use it to gain access and execute code on a server or system.
+7. Netty: SslHandler doesn't correctly validate packets that are exposed (CVE-2025-24970)
+The Netty: SslHandler doesn't correctly validate packets that are exposed (CVE-2025-24970) is a critical vulnerability that can lead to an attacker gaining access and executing code on a server or system. The vulnerability affects the SslHandler, which is used for managing SSL/TLS protocol connections. If the vulnerable API is not properly implemented or if it is accidentally exposed, the attacker can use it to gain access and execute code on a server or system.
+8. Spring Data: Number Length Constraint Bypass in Repository (CVE-2025-55163)
+The Spring Data: Number Length Constraint Bypass in Repository is a critical vulnerability that can lead to an attacker gaining access and executing code on a server or system. The vulnerability affects the Spring Data: Repository, which is used for managing data access operations. If the vulnerable API is not properly implemented or if it is accidentally exposed, the attacker can use it to gain access and execute code on a server or system.
