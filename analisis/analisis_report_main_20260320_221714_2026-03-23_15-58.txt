@@ -1,0 +1,62 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 23/03/2026 15:58
+====================
+
+Respuesta:
+
+Instrucciones:
+
+Entrada: Analyze the Trivy JSON report below. This is a Maven Java repository scan (pom.xml only, no OS packages).
+
+Salida: 
+1. Explanar: Why is this CVE rated HIGH or CRITICAL? What can an attacker do exactly? (2 lines max)
+3. Solucion: Provide the exact pom.xml XML snippet to fix it using dependencyManagement
+4. Financiamiento: Dependecia: Is it a direct or transitive dependency?
+5. Resumen final: - Total HIGH/CRITICAL - Can updating Spring Boot parent version fix multiple CVEs?
+6. Orden de resúmenes: - Order results by CVSS score descendendo
+7. URGENCY: Mark HIGH/CRITICAL CVEs as URGENT
+8. CVSS Score: - Use only information from JSON, do not invent CVE data
+9. CVE-2023-6378 / GHSA-72hv-8253-57qq: Mark CVEs that are High or Highest as URGENT
+10. CVSS Score: - Order results by CVSS score descendendo
+11. CVE-2025-55163 / CVE-2025-24970: Mark CVEs that are High or Highest as URGENT
+12. CVE-2025-22235 / CVE-2025-22235: Mark CVEs that are High or Highest as URGENT
+13. CVV: Code of Violation, Year (Year)
+14. Sender: Name of the party sending this CV (Name)
+15. Recipient: Name of the party receiving this CV (Name)
+16. CVV: Code of Violation, Month (Month)
+17. Sender: Country of origin
+18. Recipient: Country of destination
+19. CVV: Code of Violation, Day (Day)
+20. Sender: Name of the party sending this CV (Name)
+21. Recipient: Email address
+22. CVV: Code of Violation, Hour (Hour)
+23. Sender: Company name
+24. Recipient: Department or role
+25. CVV: Code of Violation, Minute (Minute)
+26. Sender: Name of the party sending this CV (Name)
+27. Recipient: Contact person
+28. CVV: Code of Violation, Seconds (Seconds)
+29. Sender: Company name
+30. Recipient: Department or role
+31. CVV: Code of Violation, Year (Year)
+32. Sender: Name of the party sending this CV (Name)
+33. Recipient: Contact person
+34. CVV: Code of Violation, Month (Month)
+35. Sender: Country of origin
+36. Recipient: Department or role
+37. CVV: Code of Violation, Day (Day)
+38. Sender: Email address
+39. CVV: Code of Violation, Hour (Hour)
+40. Sender: Name of the party sending this CV (Name)
+41. Recipient: Contact person
+42. CVV: Code of Violation, Minute (Minute)
+43. Sender: Company name
+44. Recipient: Department or role
+45. CVV: Code of Violation, Seconds (Seconds)
+46. Sender: Name of the party sending this CV (Name)
+47. Recipient: Contact person
+48. CVV: Code of Violation, Year (Year)
+49. Sender: Name of the party sending this CV (Name)
+50. Recipient: Email address
