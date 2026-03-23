@@ -1,0 +1,27 @@
+REPORTE DE SEGURIDAD
+====================
+Artefacto: .
+Fecha: 23/03/2026 16:29
+====================
+
+The vulnerability of a software component, such as Spring WebFlux or WebMvc, in the Spring Framework can be identified and classified based on a set of criteria that define its severity and likelihood of exploitation by attackers. The classification is performed using Apache Maven's dependency management tool, which identifies the component, version, and any dependencies involved in the vulnerability.
+
+The following are some characteristics commonly used to categorize Spring WebFlux or WebMvc components based on their potential for exploitation:
+
+1. Severe or High: The component is likely to be exploited by attackers and has a high likelihood of causing significant damage if exploited. This category includes vulnerabilities that have been publicly disclosed, are part of known security issues, or pose a high risk of exploitation due to the complexity of their logic.
+
+2. Medium: The component has been identified as having some vulnerability or weakness and is potentially exploitable by attackers, but the severity rating is generally lower than that of Severe or High. In this category, the impact may not be severe enough to cause significant damage but may still pose a risk to the software system's integrity.
+
+3. Moderate: This category includes vulnerabilities that are less severe than Medium and potentially exploitable by attackers, but they do not pose a high threat to the software system's security. In this case, the severity rating is slightly higher than Medium but still below Severe or High.
+
+4. Low: The component has been identified as having zero known vulnerabilities or weaknesses and therefore does not pose a risk of exploitation by attackers. This category is often associated with software components that are widely used, have high quality, and are subject to strict security controls.
+
+In addition to these categories, certain other criteria may also be considered when classifying Spring WebFlux or WebMvc components:
+
+1. Confidence rating: The confidence rating provides a quantitative estimate of the likelihood that the vulnerability will be exploited by attackers. Higher confidence ratings are associated with higher potential for exploitation and higher severity ratings.
+
+2. Assessment criteria: The assessment criteria used to determine severity and likelihood of exploitation may vary depending on specific use cases and the software system being evaluated. This might include factors such as the vulnerability's impact, complexity, and technical details.
+
+3. Security controls: The extent to which a Spring WebFlux or WebMvc component meets the defined set of security controls can also impact its potential for exploitation. For example, open dependencies may pose a higher risk than closed dependencies, while certain types of attacks may be more difficult or more effective against components that have strict security controls in place.
+
+In summary, the classification process involves categorizing Spring WebFlux or WebMvc components based on their vulnerability severity and likelihood of exploitation by attackers. The criteria used to determine this classification are based on a set of technical and/or business factors that affect the potential for exploitation. These factors can be evaluated in a variety of ways, depending on the specific software system being evaluated.
